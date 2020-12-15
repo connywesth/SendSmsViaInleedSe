@@ -6,8 +6,8 @@
 // Author: Conny Westh, Adopter KB, 073-898 68 61, conny.westh@gmail.com
 // UTF-8 med URLEncode
 ////////////////////////////////////////////////////////////////////////////////    
-// Refgistrera dig och skaffa en sms-nyckel på http://sms.inleed.se 
-// Alla SMS skickas idag från nummer 0763448100. 
+// Refgistrera dig och skaffa en sms-nyckel pÃ¥ http://sms.inleed.se 
+// Alla SMS skickas idag frÃ¥n nummer 0763448100. 
 ////////////////////////////////////////////////////////////////////////////////    
 class SmsUtility
 {
@@ -58,12 +58,15 @@ class SmsUtility
      
     function url_encode($string)
     {
-         return rawurlencode(utf8_encode($string));
+         //return rawurlencode(utf8_encode($string));
+         return urlencode(utf8_encode($string));  // Change 2020-12-15 thankx to Prakhar Kant Tripathi
     }
      
     function url_decode($string)
     {
-         return utf8_decode(rawurldecode($string));
+         //return utf8_decode(rawurldecode($string));
+         return utf8_decode(urlencode($string)); // Change 2020-12-15 thankx to Prakhar Kant Tripathi
+         
     }    
 }
 
