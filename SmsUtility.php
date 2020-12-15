@@ -3,6 +3,7 @@
 // File: SmsUtility.php
 // Date: 2013-07-21 // created file_get_contents()
 // Date: 2013-07-23 // added cURL...
+// Date: 2020-12-15 Change of urlencoding, thankx to Prakhar Kant Tripathi
 // Author: Conny Westh, Adopter KB, 073-898 68 61, conny.westh@gmail.com
 // UTF-8 med URLEncode
 ////////////////////////////////////////////////////////////////////////////////    
